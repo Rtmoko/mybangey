@@ -1,0 +1,10 @@
+inventaris
+
+{barang} ; id (int 11 AI),nama (varcar 150),deskripsi (text)NULL,jumlah (int 11),
+tersedia (int 11),lokasi (varcar 100)NULL,kode (varcar 50)NULL,created_at (timestamp)
+
+{transaksi} ; id (int 11 AI),barang id (int 11),peminjam (varcar 100),
+jenis (enum "pinjam,kembali"),jumlah (int 11),tanggal (datetime),catatan (text)NULL.
+
+{users} ; id (int 11 AI),username (varcar 50),password (varcar 50),fullname (varcar 100)NULL,
+created_at (timestamp)
